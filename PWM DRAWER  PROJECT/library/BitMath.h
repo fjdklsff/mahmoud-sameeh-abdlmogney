@@ -1,11 +1,3 @@
-/*
- * BitMath.h
- *
- * Created: 3/24/2023 2:24:43 PM
- *  Author: abdal
- */ 
-
-
 #ifndef BITMATH_H_
 #define BITMATH_H_
 
