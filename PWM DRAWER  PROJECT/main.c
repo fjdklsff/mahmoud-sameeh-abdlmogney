@@ -1,10 +1,3 @@
-/*
-* PWM DRAWER  AMIT GRAD PROJ.c
-*
-* Created: 3/24/2023 2:18:36 PM
-* Author : abdal
-*/
-
 #include <avr/io.h>
 #include <stdlib.h>
 #include "DIO.h"
