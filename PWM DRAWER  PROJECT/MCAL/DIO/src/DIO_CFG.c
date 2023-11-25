@@ -1,10 +1,3 @@
-/*
- * DIO_CFG.c
- *
- * Created: 3/24/2023 3:03:52 PM
- *  Author: abdal
- */ 
-
 #include "DIO_CFG.h"
 
 DIO_PinCfg PinCfg[] = {
