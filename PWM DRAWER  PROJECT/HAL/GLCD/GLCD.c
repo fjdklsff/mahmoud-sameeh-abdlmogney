@@ -1,9 +1,3 @@
-/*
- * GLCD.c
- *
- * Created: 3/26/2023 9:06:22 PM
- *  Author: abdal
- */ 
 #include "GLCD.h"
 #include "Font_Header.h"
 #include <string.h>
