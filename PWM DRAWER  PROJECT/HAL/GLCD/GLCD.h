@@ -1,11 +1,3 @@
-/*
- * GLCD.h
- *
- * Created: 3/26/2023 9:03:03 PM
- *  Author: abdal
- */ 
-
-
 #ifndef GLCD_H_
 #define GLCD_H_
 
