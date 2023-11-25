@@ -1,11 +1,3 @@
-/*
- * Std_Types.h
- *
- * Created: 3/24/2023 2:27:20 PM
- *  Author: abdal
- */ 
-
-
 #ifndef STD_TYPES_H_
 #define STD_TYPES_H_
 
