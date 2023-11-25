@@ -1,11 +1,3 @@
-/*
- * DIO_CFG.h
- *
- * Created: 3/24/2023 3:00:50 PM
- *  Author: abdal
- */ 
-
-
 #ifndef DIO_CFG_H_
 #define DIO_CFG_H_
 
