@@ -1,11 +1,3 @@
-/*
- * DIO_Types.h
- *
- * Created: 3/24/2023 2:59:24 PM
- *  Author: abdal
- */ 
-
-
 #ifndef DIO_TYPES_H_
 #define DIO_TYPES_H_
 
