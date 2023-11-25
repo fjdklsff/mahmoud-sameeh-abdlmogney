@@ -1,10 +1,3 @@
-/*
- * DIO.c
- *
- * Created: 3/24/2023 3:08:57 PM
- *  Author: abdal
- */ 
-
 #include "DIO.h"
 
 void DIO_WriteChannel(DIO_ChannelTypes channelId,STD_LevelTypes level){
