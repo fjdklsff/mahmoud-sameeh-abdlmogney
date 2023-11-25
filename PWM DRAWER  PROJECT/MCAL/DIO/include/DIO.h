@@ -1,10 +1,3 @@
-/*
- * DIO.h
- *
- * Created: 3/24/2023 3:01:44 PM
- *  Author: abdal
- */ 
-
 
 #ifndef DIO_H_
 #define DIO_H_
