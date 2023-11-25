@@ -19,35 +19,35 @@ int main ( )
 	{
 		TCCR1A = 0;
 		TCNT1=0;
-		TIFR = (1<<ICF1);                  	/* Clear ICF (Input Capture flag) flag */
+		TIFR = (1<<ICF1);                  	
 		
-		TCCR1B = 0x41;  	                /* Rising edge, no prescaler */
+		TCCR1B = 0x41;  	                
 		while ((TIFR&(1<<ICF1)) == 0);
-		a = ICR1;  		                    /* Take value of capture register */
-		TIFR = (1<<ICF1);                 	/* Clear ICF flag */
+		a = ICR1;  		                    
+		TIFR = (1<<ICF1);                 	
 		
-		TCCR1B = 0x01;  	                /* Falling edge, no prescaler */
+		TCCR1B = 0x01;  	                
 		while ((TIFR&(1<<ICF1)) == 0);
-		b = ICR1;  		                    /* Take value of capture register */
-		TIFR = (1<<ICF1);  	                /* Clear ICF flag */
+		b = ICR1;  		                    
+		TIFR = (1<<ICF1);  	                
 		
-		TCCR1B = 0x41;  	                /* Rising edge, no prescaler */
+		TCCR1B = 0x41;  	                
 		while ((TIFR&(1<<ICF1)) == 0);
-		c = ICR1;  		                    /* Take value of capture register */
-		TIFR = (1<<ICF1);  	                /* Clear ICF flag */
+		c = ICR1;  		                   
+		TIFR = (1<<ICF1);  	               
 		
-		TCCR1B = 0;  		                /* Stop the timer */
+		TCCR1B = 0;  		               
 		
-		if(a<b && b<c)  	               /* Check for valid condition,
+		if(a<b && b<c)  	               
 		to avoid timer overflow reading */
 		{
 			high=b-a;
 			period=c-a;
 			
-			u32 freq= F_CPU/period;            /* Calculate frequency */
+			u32 freq= F_CPU/period;            
 			freq=freq/1000;
 			
-			/* Calculate duty cycle */
+			
 			f32 duty_cycle =((f32) high /(f32)period)*100;
 			ltoa(freq,frequency,10);
 			
@@ -73,7 +73,7 @@ int main ( )
 			char a [40];
 			char arrow[10];
 			
-			/* printing time arrow*/
+			
 			strcat(arrow,"<-");
 			
 			for (u32 j=0;j<6;j++)
@@ -83,7 +83,7 @@ int main ( )
 			strcat(arrow,"->");		
 			GLCD_String(6,arrow);
 	
-				/* printing square wave */
+				
 			for (u32 i = 0;i<2;i++)
 			{
 				for (u32 j=0;j<(duty_cycle/10);j++)
